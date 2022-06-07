@@ -1,0 +1,18 @@
+/* 
+font-family: 'Raleway',
+sans-serif;
+font-family: 'Roboto',
+sans-serif;
+
+*/
+
+:root {
+    --black-text: #212121;
+    --white-text: #FFFFFF;
+    --grey-text:#757575;
+    --blue-text: #2196F3;
+}
+
+a {
+    color: var(--blue-text);
+}
