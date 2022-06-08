@@ -10,9 +10,148 @@ sans-serif;
     --black-text: #212121;
     --white-text: #FFFFFF;
     --grey-text:#757575;
-    --blue-text: #2196F3;
+    --grey-bgd: #F5F4FA;
+    --blue-text: #2196F3;    
 }
 
-a {
+body {
+    font-family: 'Roboto', sans-serif;    
+    color: var(--black-text);   
+
+     /*«С8» Вказані альтернативні варіанти шрифту і тип сімейства (без зарубок) в кінці переліку font-family в елемента <body>.  */
+}
+
+/* header */
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
     color: var(--blue-text);
+    text-decoration: none;
+}
+
+.logo > span {
+    color: var(--black-text);
+}
+
+.list {
+    list-style: none;
+}
+
+.item a {
+    color: var(--black-text);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+}
+
+.menu a:focus,
+.menu a:hover,
+.contacts a:focus,
+.contacts a:hover {
+    color: var(--blue-text);
+}
+
+.contacts a {
+    color: var(--grey-text);
+}
+
+/* section Hero */
+.hero h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;    
+    text-transform: uppercase;
+    color: var(--white-text);
+    background-color: #212121;
+}
+
+.button {
+    background-color: var(--blue-text);
+    color: var(--white-text);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    border: none;   
+    border-radius: 5px;     
+}
+
+/* section Advantage */
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.advantage h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.advantage p {  
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;    
+    color: var(--grey-text);    
+}
+
+/* section Team */
+.team h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;    
+}
+
+.team p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--grey-text);
+}
+
+/* section Portfolio */
+.portfolio .button {
+    background-color: var(--grey-bgd);
+    color: var(--black-text);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;        
+}
+
+.portfolio .button:focus,
+.portfolio .button:hover {
+    background-color: var(--blue-text);
+    color: var(--white-text);    
+    cursor: pointer;
+}
+
+.portfolio h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;        
+}
+
+.portfolio p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--grey-text);
+}
+
+/* footer */
+.address a {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 171%;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #212121;
+}
+
+.address .item:first-child a {
+    color: var(--white-text);    
 }
