@@ -38,7 +38,7 @@ body {
     line-height: 1.14;
 }
 
-.menu .active {    
+.menu .active {     
     color: var(--brand-color);
 }
 
@@ -117,14 +117,14 @@ body {
 /* section Portfolio */
 .portfolio .button {
     background-color: var(--bgd-color);
-    color: var(--main-color);
-    font-family: 'Roboto';        
+    color: var(--main-color);           
     font-weight: 500;   
     line-height: 1.6;        
 }
 
 .portfolio .button:focus,
-.portfolio .button:hover {
+.portfolio .button:hover,
+.portfolio .active {
     background-color: var(--brand-color);
     color: var(--third-color);    
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
