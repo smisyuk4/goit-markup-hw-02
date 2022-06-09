@@ -1,24 +1,15 @@
-/* 
-font-family: 'Raleway',
-sans-serif;
-font-family: 'Roboto',
-sans-serif;
-
-*/
-
 :root {
-    --black-text: #212121;
-    --white-text: #FFFFFF;
-    --grey-text:#757575;
-    --grey-bgd: #F5F4FA;
-    --blue-text: #2196F3;    
+    --main-color: #212121;
+    --brand-color: #2196F3;
+    --second-color: #757575;
+    --third-color: #FFFFFF;   
+    --bgd-color: #F5F4FA;    
 }
 
 body {
     font-family: 'Roboto', sans-serif;    
-    color: var(--black-text);   
-
-     /*«С8» Вказані альтернативні варіанти шрифту і тип сімейства (без зарубок) в кінці переліку font-family в елемента <body>.  */
+    color: var(--main-color);   
+    font-size: 16px;    
 }
 
 /* header */
@@ -27,56 +18,67 @@ body {
     font-size: 26px;
     font-weight: 700;
     line-height: 1.2;
-    color: var(--blue-text);
+    color: var(--brand-color);
     text-decoration: none;
 }
 
 .logo > span {
-    color: var(--black-text);
+    color: var(--main-color);
 }
 
 .list {
     list-style: none;
 }
 
-.item a {
-    color: var(--black-text);
+.item .link {
+    color: var(--main-color);
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
 }
 
-.menu a:focus,
-.menu a:hover,
-.contacts a:focus,
-.contacts a:hover {
-    color: var(--blue-text);
+.menu .active {    
+    color: var(--brand-color);
 }
 
-.contacts a {
-    color: var(--grey-text);
+.menu .link:focus,
+.menu .link:hover,
+.contacts .link:focus,
+.contacts .link:hover {
+    color: var(--brand-color);
+}
+
+.contacts .link {
+    color: var(--second-color);
 }
 
 /* section Hero */
-.hero h1 {
+.hero .title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
     text-align: center;    
     text-transform: uppercase;
-    color: var(--white-text);
+    color: var(--third-color);
     background-color: #212121;
 }
 
 .button {
-    background-color: var(--blue-text);
-    color: var(--white-text);
-    font-weight: 700;
-    font-size: 16px;
+    background-color: var(--brand-color);
+    color: var(--third-color);
+    font-family: 'Roboto';  
+    font-size: 16px;      
+    font-weight: 700;   
     line-height: 1.9;
     border: none;   
-    border-radius: 5px;     
+    border-radius: 4px;     
+}
+
+.button:focus,
+.button:hover {
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);      
 }
 
 /* section Advantage */
@@ -86,65 +88,65 @@ body {
     line-height: 1.2;
 }
 
-.advantage h3 {
+.advantage .advantage-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
 
-.advantage p {  
+.advantage .advantage-desc {  
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;    
-    color: var(--grey-text);    
+    color: var(--second-color);    
 }
 
 /* section Team */
-.team h3 {
-    font-weight: 500;
-    font-size: 16px;
+.team .name {
+    font-weight: 500;    
     line-height: 1.2;    
 }
 
-.team p {
-    font-weight: 400;
-    font-size: 16px;
+.team .position {
+    font-weight: 400;    
     line-height: 1.2;
-    color: var(--grey-text);
+    color: var(--second-color);
 }
 
 /* section Portfolio */
 .portfolio .button {
-    background-color: var(--grey-bgd);
-    color: var(--black-text);
-    font-weight: 500;
-    font-size: 16px;
+    background-color: var(--bgd-color);
+    color: var(--main-color);
+    font-family: 'Roboto';        
+    font-weight: 500;   
     line-height: 1.6;        
 }
 
 .portfolio .button:focus,
 .portfolio .button:hover {
-    background-color: var(--blue-text);
-    color: var(--white-text);    
+    background-color: var(--brand-color);
+    color: var(--third-color);    
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+        0px 1px 2px rgba(0, 0, 0, 0.08), 
+        0px 2px 2px rgba(0, 0, 0, 0.12);
     cursor: pointer;
 }
 
-.portfolio h2 {
+.portfolio .project {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;        
 }
 
-.portfolio p {
-    font-weight: 400;
-    font-size: 16px;
+.portfolio .category {
+    font-weight: 400;    
     line-height: 1.9;
-    color: var(--grey-text);
+    color: var(--second-color);
 }
 
 /* footer */
-.address a {
+.address .link {
     font-style: normal;
     font-weight: 400;
     line-height: 171%;
@@ -152,6 +154,6 @@ body {
     background-color: #212121;
 }
 
-.address .item:first-child a {
-    color: var(--white-text);    
+.address .item:first-child .link {
+    color: var(--third-color);    
 }
